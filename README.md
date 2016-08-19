@@ -1,5 +1,5 @@
 # dotfiles
-Various config files, that I don't want to loose. 
+Various config files, that I don't want to lose. 
 System: Arch, Thinkpad X230
 
 * i3 and i3blocks configs
