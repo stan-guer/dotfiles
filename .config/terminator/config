@@ -1,0 +1,562 @@
+[global_config]
+  borderless = True
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  focus = mouse
+  inactive_color_offset = 0.88
+  suppress_multiple_term_dialog = True
+  title_inactive_bg_color = "#46423b"
+  title_inactive_fg_color = "#ccc2a6"
+  title_receive_bg_color = "#c91e0f"
+  title_transmit_bg_color = "#322a2c"
+  title_transmit_fg_color = "#ccc2a6"
+  window_state = maximise
+[keybindings]
+  close_term = <Super>q
+  new_terminator = <Super>space
+  split_horiz = <Super>Return
+  split_vert = <Shift><Super>Return
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 24da5ce5-21c1-4c99-9f4f-2b0294e1b7f1
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 65:24
+      size = 2495, 1416
+      title = guerassim@artisense-veyron: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 1244
+      ratio = 0.499799599198
+      type = HPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 705
+      ratio = 0.5
+      type = VPaned
+    [[[child4]]]
+      order = 1
+      parent = child2
+      position = 349
+      ratio = 0.499290780142
+      type = VPaned
+    [[[child7]]]
+      order = 1
+      parent = child1
+      position = 705
+      ratio = 0.5
+      type = VPaned
+    [[[child9]]]
+      order = 1
+      parent = child7
+      position = 349
+      ratio = 0.499290780142
+      type = VPaned
+    [[[terminal10]]]
+      order = 0
+      parent = child9
+      profile = default
+      type = Terminal
+      uuid = 380ff059-0397-4120-be45-3719704905e8
+    [[[terminal11]]]
+      order = 1
+      parent = child9
+      profile = default
+      type = Terminal
+      uuid = 41f4b66e-d46f-4915-8c61-748f4bdb7de4
+    [[[terminal3]]]
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = b3be4e17-90d5-497a-ba3f-509ad6a21d51
+    [[[terminal5]]]
+      order = 0
+      parent = child4
+      profile = default
+      type = Terminal
+      uuid = d3e12536-138c-49d0-ba78-b83ce820e5a0
+    [[[terminal6]]]
+      order = 1
+      parent = child4
+      profile = default
+      type = Terminal
+      uuid = 24da5ce5-21c1-4c99-9f4f-2b0294e1b7f1
+    [[[terminal8]]]
+      order = 0
+      parent = child7
+      profile = default
+      type = Terminal
+      uuid = 75643480-d43f-4f0e-832d-83fc75c8727b
+  [[current]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 65:24
+      size = 2495, 1416
+      title = guerassim@artisense-veyron: ~/kb
+      type = Window
+    [[[child1]]]
+      active_page = 1
+      labels = None, guerassim@artisense-veyron: ~/Documents/repos, guerassim@artisense-veyron: ~/Documents/repos/kalibr/aslam_cv/aslam_cameras/include/aslam/cameras/implementation
+      last_active_term = c32678b3-680c-4a73-8477-56dbbf2a8e99, 984db6cd-83f7-498a-8b29-e5f5bfd0dd74, 8b4d7db8-99be-4da0-82f2-b93fd5f40d95
+      order = 0
+      parent = child0
+      type = Notebook
+    [[[child10]]]
+      order = 0
+      parent = child9
+      position = 691
+      ratio = 0.5
+      type = VPaned
+    [[[child13]]]
+      order = 1
+      parent = child9
+      position = 691
+      ratio = 0.5
+      type = VPaned
+    [[[child16]]]
+      order = 2
+      parent = child1
+      position = 1244
+      ratio = 0.499799599198
+      type = HPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 1244
+      ratio = 0.499799599198
+      type = HPaned
+    [[[child3]]]
+      order = 0
+      parent = child2
+      position = 535
+      ratio = 0.387608069164
+      type = VPaned
+    [[[child6]]]
+      order = 1
+      parent = child2
+      position = 729
+      ratio = 0.527377521614
+      type = VPaned
+    [[[child9]]]
+      order = 1
+      parent = child1
+      position = 1244
+      ratio = 0.499799599198
+      type = HPaned
+    [[[terminal11]]]
+      order = 0
+      parent = child10
+      profile = default
+      type = Terminal
+      uuid = 984db6cd-83f7-498a-8b29-e5f5bfd0dd74
+    [[[terminal12]]]
+      order = 1
+      parent = child10
+      profile = default
+      type = Terminal
+      uuid = af33364a-a916-4f54-acb7-8209273f16b7
+    [[[terminal14]]]
+      order = 0
+      parent = child13
+      profile = default
+      type = Terminal
+      uuid = 5d53d4ec-8137-42b3-adb6-815259e7f851
+    [[[terminal15]]]
+      order = 1
+      parent = child13
+      profile = default
+      type = Terminal
+      uuid = 158d3dc2-d55e-46c8-b7da-f35f7b2a21b3
+    [[[terminal17]]]
+      order = 0
+      parent = child16
+      profile = default
+      type = Terminal
+      uuid = 8b4d7db8-99be-4da0-82f2-b93fd5f40d95
+    [[[terminal18]]]
+      order = 1
+      parent = child16
+      profile = default
+      type = Terminal
+      uuid = 37f67b9a-5121-4ace-87b0-75c0692b1f34
+    [[[terminal4]]]
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = c32678b3-680c-4a73-8477-56dbbf2a8e99
+    [[[terminal5]]]
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 6a4cc032-be76-4480-82e2-7250588421f4
+    [[[terminal7]]]
+      order = 0
+      parent = child6
+      profile = default
+      type = Terminal
+      uuid = d3f79ad2-3ad0-4d0d-8881-ee78bacb3214
+    [[[terminal8]]]
+      order = 1
+      parent = child6
+      profile = default
+      type = Terminal
+      uuid = 3c2ae4c4-8d13-4495-a3e2-1ece2529b0f7
+  [[hackerman]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 65:24
+      size = 2495, 1416
+      title = guerassim@artisense-veyron: ~
+      type = Window
+    [[[child1]]]
+      active_page = 2
+      labels = None, None, None, guerassim@artisense-veyron: ~/monocalib, None, None
+      last_active_term = b3be4e17-90d5-497a-ba3f-509ad6a21d51, ba705e22-8f8c-4936-8fc0-6ebdceb8f7bc, 59e278e6-fa00-477f-b1c8-53685e89f08e, 175364d5-485d-4149-b7a2-35768cf0efc2, 4e573d20-fa60-4454-be71-4258653ad68e, 76dc04e4-24f1-4f7d-91f3-f5e9412bae27
+      order = 0
+      parent = child0
+      type = Notebook
+    [[[child10]]]
+      order = 1
+      parent = child2
+      position = 691
+      ratio = 0.5
+      type = VPaned
+    [[[child12]]]
+      order = 1
+      parent = child10
+      position = 342
+      ratio = 0.499276410999
+      type = VPaned
+    [[[child15]]]
+      order = 1
+      parent = child1
+      position = 1244
+      ratio = 0.499799599198
+      type = HPaned
+    [[[child17]]]
+      order = 1
+      parent = child15
+      position = 691
+      ratio = 0.5
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 1243
+      ratio = 0.499398797595
+      type = HPaned
+    [[[child20]]]
+      order = 2
+      parent = child1
+      position = 1244
+      ratio = 0.499799599198
+      type = HPaned
+    [[[child21]]]
+      order = 0
+      parent = child20
+      position = 1334
+      ratio = 0.96325648415
+      type = VPaned
+    [[[child22]]]
+      order = 0
+      parent = child21
+      position = 1093
+      ratio = 0.821589205397
+      type = VPaned
+    [[[child26]]]
+      order = 1
+      parent = child20
+      position = 448
+      ratio = 0.32492795389
+      type = VPaned
+    [[[child28]]]
+      order = 1
+      parent = child26
+      position = 464
+      ratio = 0.5
+      type = VPaned
+    [[[child3]]]
+      order = 0
+      parent = child2
+      position = 691
+      ratio = 0.5
+      type = VPaned
+    [[[child32]]]
+      order = 4
+      parent = child1
+      position = 1244
+      ratio = 0.499799599198
+      type = HPaned
+    [[[child33]]]
+      order = 0
+      parent = child32
+      position = 691
+      ratio = 0.5
+      type = VPaned
+    [[[child36]]]
+      order = 1
+      parent = child32
+      position = 691
+      ratio = 0.5
+      type = VPaned
+    [[[child39]]]
+      order = 5
+      parent = child1
+      position = 1244
+      ratio = 0.499799599198
+      type = HPaned
+    [[[child4]]]
+      order = 0
+      parent = child3
+      position = 342
+      ratio = 0.499276410999
+      type = VPaned
+    [[[child7]]]
+      order = 1
+      parent = child3
+      position = 342
+      ratio = 0.499276410999
+      type = VPaned
+    [[[terminal11]]]
+      order = 0
+      parent = child10
+      profile = default
+      type = Terminal
+      uuid = 75643480-d43f-4f0e-832d-83fc75c8727b
+    [[[terminal13]]]
+      order = 0
+      parent = child12
+      profile = default
+      type = Terminal
+      uuid = 380ff059-0397-4120-be45-3719704905e8
+    [[[terminal14]]]
+      order = 1
+      parent = child12
+      profile = default
+      type = Terminal
+      uuid = 41f4b66e-d46f-4915-8c61-748f4bdb7de4
+    [[[terminal16]]]
+      order = 0
+      parent = child15
+      profile = default
+      type = Terminal
+      uuid = ba705e22-8f8c-4936-8fc0-6ebdceb8f7bc
+    [[[terminal18]]]
+      order = 0
+      parent = child17
+      profile = default
+      type = Terminal
+      uuid = c5d30bf2-92ed-4d2e-9c4b-d12d693100cb
+    [[[terminal19]]]
+      order = 1
+      parent = child17
+      profile = default
+      type = Terminal
+      uuid = ca516c53-6473-49f5-9109-d5de0b3a101a
+    [[[terminal23]]]
+      order = 0
+      parent = child22
+      profile = default
+      type = Terminal
+      uuid = 59e278e6-fa00-477f-b1c8-53685e89f08e
+    [[[terminal24]]]
+      order = 1
+      parent = child22
+      profile = default
+      type = Terminal
+      uuid = e10cf132-995a-4b41-a728-50c27c05f134
+    [[[terminal25]]]
+      order = 1
+      parent = child21
+      profile = default
+      type = Terminal
+      uuid = 2e6173d6-3cea-4c57-8d3b-ac5f93b9fdec
+    [[[terminal27]]]
+      order = 0
+      parent = child26
+      profile = default
+      type = Terminal
+      uuid = 04f4785d-c2bd-4374-8c5a-5f71087fbf92
+    [[[terminal29]]]
+      order = 0
+      parent = child28
+      profile = default
+      type = Terminal
+      uuid = 9a393ebd-3b1e-4d2e-bd58-a90ef758c708
+    [[[terminal30]]]
+      order = 1
+      parent = child28
+      profile = default
+      type = Terminal
+      uuid = 7ed9b12b-7f57-4a02-90fc-6ed2cfccb1e4
+    [[[terminal31]]]
+      order = 3
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 175364d5-485d-4149-b7a2-35768cf0efc2
+    [[[terminal34]]]
+      order = 0
+      parent = child33
+      profile = default
+      type = Terminal
+      uuid = 6aec2c73-065f-47d1-9ee4-26f22eb8b367
+    [[[terminal35]]]
+      order = 1
+      parent = child33
+      profile = default
+      type = Terminal
+      uuid = f66d721f-664e-46ef-8799-84e5df366c0f
+    [[[terminal37]]]
+      order = 0
+      parent = child36
+      profile = default
+      type = Terminal
+      uuid = 4e573d20-fa60-4454-be71-4258653ad68e
+    [[[terminal38]]]
+      order = 1
+      parent = child36
+      profile = default
+      type = Terminal
+      uuid = 48a91ad1-9d0b-40b7-a42c-50600de0ac38
+    [[[terminal40]]]
+      order = 0
+      parent = child39
+      profile = default
+      type = Terminal
+      uuid = 25b6412c-8aca-4a7d-b5b7-507305922a92
+    [[[terminal41]]]
+      order = 1
+      parent = child39
+      profile = default
+      type = Terminal
+      uuid = 76dc04e4-24f1-4f7d-91f3-f5e9412bae27
+    [[[terminal5]]]
+      order = 0
+      parent = child4
+      profile = default
+      type = Terminal
+      uuid = b3be4e17-90d5-497a-ba3f-509ad6a21d51
+    [[[terminal6]]]
+      order = 1
+      parent = child4
+      profile = default
+      type = Terminal
+      uuid = ca507c7a-03e2-4db9-91d9-2ddf54615183
+    [[[terminal8]]]
+      order = 0
+      parent = child7
+      profile = default
+      type = Terminal
+      uuid = d3e12536-138c-49d0-ba78-b83ce820e5a0
+    [[[terminal9]]]
+      order = 1
+      parent = child7
+      profile = default
+      type = Terminal
+      uuid = 24da5ce5-21c1-4c99-9f4f-2b0294e1b7f1
+  [[halfhalf]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 24da5ce5-21c1-4c99-9f4f-2b0294e1b7f1
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 65:24
+      size = 2495, 1416
+      title = guerassim@artisense-veyron: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 1244
+      ratio = 0.499799599198
+      type = HPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 705
+      ratio = 0.5
+      type = VPaned
+    [[[child4]]]
+      order = 1
+      parent = child2
+      position = 349
+      ratio = 0.499290780142
+      type = VPaned
+    [[[child7]]]
+      order = 1
+      parent = child1
+      position = 705
+      ratio = 0.5
+      type = VPaned
+    [[[child9]]]
+      order = 1
+      parent = child7
+      position = 349
+      ratio = 0.499290780142
+      type = VPaned
+    [[[terminal10]]]
+      order = 0
+      parent = child9
+      profile = default
+      type = Terminal
+      uuid = 380ff059-0397-4120-be45-3719704905e8
+    [[[terminal11]]]
+      order = 1
+      parent = child9
+      profile = default
+      type = Terminal
+      uuid = 41f4b66e-d46f-4915-8c61-748f4bdb7de4
+    [[[terminal3]]]
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = b3be4e17-90d5-497a-ba3f-509ad6a21d51
+    [[[terminal5]]]
+      order = 0
+      parent = child4
+      profile = default
+      type = Terminal
+      uuid = d3e12536-138c-49d0-ba78-b83ce820e5a0
+    [[[terminal6]]]
+      order = 1
+      parent = child4
+      profile = default
+      type = Terminal
+      uuid = 24da5ce5-21c1-4c99-9f4f-2b0294e1b7f1
+    [[[terminal8]]]
+      order = 0
+      parent = child7
+      profile = default
+      type = Terminal
+      uuid = 75643480-d43f-4f0e-832d-83fc75c8727b
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.96
+    background_image = None
+    background_type = transparent
+    cursor_color = "#ccc2a6"
+    foreground_color = "#ccc2a6"
+    login_shell = True
+    palette = "#322a2c:#b2725e:#534d35:#9c7650:#fea66a:#543b3b:#cc4e29:#9a875f:#9e9585:#916255:#858167:#ad8650:#75715e:#7b5d51:#586868:#917154"
