@@ -1,8 +1,8 @@
 # dotfiles
-Various config files, that I don't want to lose. 
-System: Arch, Thinkpad X230
 
 * i3 and i3blocks configs
+* bspwm configs
+* vim plugins
 * a cool lock script for use with i3lock
-* manual boot stanzas for refind
+* manual boot stanzas for refind (broken)
 * amberish color scheme [inspo](http://dotshare.it/dots/939/)
