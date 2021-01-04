@@ -41,33 +41,6 @@
 ! URxvt*cursorColor2: colour
 
 
-*background: #141314
-*foreground: #ccc2a6
-!black
-*color0:    #322a2c
-*color8:    #46423b
-!red
-*color1:    #70473a
-*color9:    #916255
-!green
-*color2:    #534d35
-*color10:   #858167
-!yellow
-*color3:    #9c7650
-!*color3:    #9c7650
-*color11:   #ad8650
-!blue
-*color4:    #473e38
-*color12:   #75715e
-!magenta
-*color5:    #543b3b
-*color13:   #7b5d51
-!cyan
-*color6:    #434450
-*color14:   #586868
-!white
-*color7:    #9a875f
-*color15:   #917154
 
 ! True: simulate reverse video by foreground and background
 ! URxvt*reverseVideo: boolean
@@ -101,8 +74,8 @@
 
 ! URxvt*boldFont: fontlist
 ! 11 laptop, 16 samsung
-URxvt.font:     xft:bitstream vera sans mono:size=16:antialias=true
-URxvt.boldFont: xft:bitstream vera sans mono:bold:size=16:antialias=true
+! URxvt.font:     xft:bitstream vera sans mono:size=8:antialias=true
+! URxvt.boldFont: xft:bitstream vera sans mono:bold:size=8:antialias=true
 
 ! 
 ! URxvt*italicFont: fontlist
@@ -147,7 +120,7 @@ URxvt.boldFont: xft:bitstream vera sans mono:bold:size=16:antialias=true
 ! URxvt*thickness: number
 
 ! True: enable the scrollbar [default]; option -sb. False:
- URxvt*scrollBar: false
+! URxvt*scrollBar: false
 
 ! True: place the scrollbar on the right of the window; option
 ! URxvt*scrollBar_right: boolean
@@ -572,5 +545,42 @@ URxvt.boldFont: xft:bitstream vera sans mono:bold:size=16:antialias=true
 
 ! Turn on/off ISO 14755 5.2 mode (default enabled).
 ! URxvt*iso14755_52: boolean
+
+*.foreground:   #C4C4C4
+*.background:   #2F343F
+*.cursorColor:  #7ea2b4
+*.color0:       #161b1d
+*.color8:       #3A3D3F
+*.color1:       #64B2DB
+*.color9:       #64B2DB
+*.color2:       #64B2DB
+*.color10:      #64B2DB
+*.color3:       #64B2DB
+*.color11:      #64B2DB
+*.color4:       #64B2DB
+*.color12:      #64B2DB
+*.color5:       #64B2DB
+*.color13:      #64B2DB
+*.color6:       #64B2DB
+*.color14:      #64B2DB
+*.color7:       #C4C4C4
+*.color15:      #C4C4C4
+
+URxvt*loginShell: true
+URxvt*scrollBar: false
+URxvt*internalBorder: 15
+! laptop 6 25
+URxvt*font: xft:Fira Code:size=4
+URxvt*boldFont: xft:Fira Code:bold:size=4
+URxvt.perl-ext-common: default,matcher,tabbedex
+URxvt.url-launcher: firefox
+URxvt.matcher.button: 1mer
+URxvt.tabbed.new-button: false
+URxvt.tabbed.title: false
+URxvt.tabbed.autohide: true
+URxvt.tabbed.tabbar-bg: 7
+URxvt.tabbed.tab-fg: 7
+URxvt.tabbed.tabbar-fg: 0
+URxvt.tabbed.tab-bg: 0
 
 

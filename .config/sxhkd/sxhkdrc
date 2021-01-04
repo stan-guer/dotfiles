@@ -4,7 +4,10 @@
 
 # terminal emulator
 super + Return
-	urxvt
+        urxvt
+# terminal with current pwd
+super + shift + Return
+        urxvt -cd `xdotool getactivewindow getwindowname | cut -d ":" -f 2 | sed -e 's@~@'"$HOME"'@'`
 
 # program launcher
 super + @space
