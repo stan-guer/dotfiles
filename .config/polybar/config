@@ -23,7 +23,7 @@ modules-right = system-nvidia-smi separatordotted memory cpu temperature separat
 [module/memory]
 type = internal/memory
 internal = 1
-format-prefix = 
+format-prefix = RAM:
 format-prefix-foreground = "#8be9fd"
 format = <label>
 label-foreground = "#8be9fd"
@@ -39,7 +39,7 @@ tail = false
 [module/cpu]
 type = internal/cpu
 internal = 0.5
-format-prefix = ﬙  
+format-prefix = CPU  
 format-prefix-foreground = "#ff79c6"
 format = <label>%
 label =  %percentage%
@@ -49,16 +49,16 @@ format-prefix-padding = 1
 [module/temperature]
 type = internal/temperature
 hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input 
-base-temperature = 20
+base-temperature = 25
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
 label = %temperature-c%
 label-foreground = "#50fa7b"
 label-warn = %temperature-c%
 label-warn-foreground = "#ffb86c"
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+ramp-0 = □
+ramp-1 = ▣
+ramp-2 = ☠
 ramp-0-foreground = "#50fa7b"
 ramp-1-foreground = "#50fa7b"
 ramp-2-foreground = "#ffb86c"
@@ -103,12 +103,12 @@ type = internal/battery
 battery = BAT0
 adapter = ACAD
 poll-interval = 2
-format-discharging-prefix = 
+format-discharging-prefix = ░
 ;format-discharging-prefix-foreground = "#ffb86c"
 format-discharging = <label-discharging>%
-format-full-prefix = 
+format-full-prefix = █
 format-full = <label-full>% 
-format-charging-prefix = 
+format-charging-prefix = ▟
 ;format-charging-prefix-foreground = "#50fa7b"
 format-charging = <label-charging>% 
 label-charging = %percentage%
@@ -187,7 +187,7 @@ interval = 5
 
 [module/separator]
 type = custom/text
-content = 类 
+content = │
 content-padding = 0
 content-foreground = "#ff5555"
 
@@ -199,7 +199,7 @@ content-foreground= "#282a36"
 
 [module/separatordotted]
 type = custom/text
-content =  
+content = │ 
 content-padding = 0
 content-foreground = "#ff5555"
 
