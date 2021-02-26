@@ -18,7 +18,7 @@ foreground = #ccc2a6
 
 modules-left = bspwm separatordotted info-docker
 modules-center = title
-modules-right = vpn-openvpn-isrunning separatordotted system-nvidia-smi separatordotted memory cpu temperature separatordotted wlan battery separatordotted date powermenu
+modules-right = vpn-openvpn-isrunning separatordotted system-nvidia-smi separatordotted memory cpu temperature separatordotted wlan battery-combined-udev separatordotted date powermenu
 
 [module/memory]
 type = internal/memory
@@ -93,6 +93,11 @@ exec = ~/.config/polybar/system-usb-udev.sh
 tail = true
 click-left = ~/.config/polybar/system-usb-udev.sh --mount &
 click-right = ~/.config/polybar/system-usb-udev.sh --unmount &
+
+[module/battery-combined-udev]
+type = custom/script
+exec = ~/.config/polybar/battery-combined-udev.sh
+tail = true
 
 [module/date]
 type = internal/date
