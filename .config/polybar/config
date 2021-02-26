@@ -16,9 +16,9 @@ include-file = ~/.config/polybar/fullbar
 background = #141314
 foreground = #ccc2a6
 
-modules-left = bspwm separatordotted mpd separatordotted title 
-modules-center = 
-modules-right = memory cpu temperature separatordotted wlan battery separatordotted date 
+modules-left = bspwm 
+modules-center = title
+modules-right = system-nvidia-smi separatordotted memory cpu temperature separatordotted wlan battery separatordotted date 
 
 [module/memory]
 type = internal/memory
@@ -29,6 +29,12 @@ format = <label>
 label-foreground = "#8be9fd"
 label = %mb_used%
 format-prefix-padding = 1
+
+[module/system-nvidia-smi]
+type = custom/script
+exec = ~/.config/polybar/system-nvidia-smi.sh
+interval = 10
+tail = false
 
 [module/cpu]
 type = internal/cpu
