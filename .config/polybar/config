@@ -33,7 +33,7 @@ format-prefix-padding = 1
 [module/system-nvidia-smi]
 type = custom/script
 exec = ~/.config/polybar/system-nvidia-smi.sh
-interval = 10
+interval = 4
 tail = false
 
 [module/cpu]
