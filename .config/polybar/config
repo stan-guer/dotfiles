@@ -16,9 +16,9 @@ include-file = ~/.config/polybar/fullbar
 background = #141314
 foreground = #ccc2a6
 
-modules-left = bspwm 
+modules-left = bspwm separatordotted info-docker
 modules-center = title
-modules-right = system-nvidia-smi separatordotted memory cpu temperature separatordotted wlan battery separatordotted date 
+modules-right = vpn-openvpn-isrunning separatordotted system-nvidia-smi separatordotted memory cpu temperature separatordotted wlan battery separatordotted date powermenu
 
 [module/memory]
 type = internal/memory
@@ -62,6 +62,16 @@ ramp-2 = ☠
 ramp-0-foreground = "#50fa7b"
 ramp-1-foreground = "#50fa7b"
 ramp-2-foreground = "#ffb86c"
+
+[module/vpn-openvpn-isrunning]
+type = custom/script
+exec = ~/.config/polybar/vpn-openvpn-isrunning.sh
+interval = 5
+
+[module/info-docker]
+type = custom/script
+exec = ~/.config/polybar/info-docker.sh
+interval = 30
 
 [module/filesystem]
 type = internal/fs
@@ -209,14 +219,14 @@ expand-left = true
 menu-0-0 = Logout
 menu-0-0-exec = i3-msg exit
 menu-0-1 = Lock
-menu-0-1-exec = mantablockscreen
+menu-0-1-exec = ~/repos/dotfiles/.i3/lock.sh
 menu-0-2 = Poweroff
 menu-0-2-exec = poweroff
 menu-0-3 = Reboot
 menu-0-3-exec = reboot
 format-spacing = 1 
 format-padding = 2
-label-open = M
+label-open = ◉
 label-close = X
 label-separator = |
 
