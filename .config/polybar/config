@@ -18,7 +18,7 @@ foreground = #ccc2a6
 
 modules-left = bspwm separatordotted info-docker
 modules-center = title
-modules-right = vpn-openvpn-isrunning separatordotted system-nvidia-smi separatordotted memory cpu temperature separatordotted wlan battery-combined-udev separatordotted date powermenu
+modules-right = vpn-openvpn-isrunning separatordotted system-nvidia-smi separatordotted filesystem separatordotted memory cpu temperature separatordotted wlan battery-combined-udev separatordotted date powermenu
 
 [module/memory]
 type = internal/memory
@@ -84,7 +84,7 @@ format-mounted = <label-mounted>
 format-unmounted-prefix = 
 format-unmounted-prefix-foreground = "#ff79c6"
 format-unmounted = <label-unmounted>
-label-mounted = %free%
+label-mounted = df: %free%
 label-unmounted = %mountpoint%: not mounted
 
 [module/system-usb-udev]
