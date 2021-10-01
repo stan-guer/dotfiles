@@ -1,9 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
-STATUS="running exited dead"
+STATUS="running exited paused dead"
 
 for stat in $STATUS; do
-    output="$output $(docker ps -qf status="$stat" | wc -l) |"
+    prefix=${stat:0:1}
+    output="$output $prefix $(docker ps -qf status="$stat" | wc -l) |"
 done
 
-echo "dock |$output"
+echo "dockr |$output"
