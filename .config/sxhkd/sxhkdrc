@@ -4,13 +4,13 @@
 
 # terminal emulator
 super + Return
-        urxvt
+        ~/repos/alacritty/target/release/alacritty
 # terminal with current pwd
 super + shift + Return
         urxvt -cd `xdotool getactivewindow getwindowname | cut -d ":" -f 2 | sed -e 's@~@'"$HOME"'@'`
 
 # program launcher
-super + @space
+super + space
 	dmenu_run
 
 # make sxhkd reload its configuration files:
@@ -126,3 +126,6 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+super + ctrl + alt + l
+    xautolock -locknow
