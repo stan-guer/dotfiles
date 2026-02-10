@@ -5,8 +5,6 @@
 ###########
 
 # Import additional configuration files
-import = [
-]
 
 # Shell program and its arguments
 # Default for Linux/BSD/macOS is $SHELL or user's login shell
@@ -19,10 +17,10 @@ import = [
 working_directory = "None"  # Default: "None"
 
 # Live config reload (changes require restart)
-live_config_reload = true  # Default: true
+general.live_config_reload = true  # Default: true
 
 # Offer IPC using alacritty msg (unix only)
-ipc_socket = true  # Default: true
+#ipc_socket = true  # Default: true
 
 #######
 # ENV #
@@ -98,13 +96,17 @@ multiplier = 1  # Default: 3
 
 [font]
 
+normal = { family = "FiraCode Nerd Font Mono", style = "Light" }
+bold = { style = "Bold" }
+italic = { style = "Italic" }
+bold_italic = { style = "Bold Italic" }
 
 # Font size in points
 #size = 11.25  # Default: 11.25
 # multimonitor : 16.5
-#size = 16 
+size = 16 
 # laptop : 12
-size = 12
+#size = 12
 
 # Offset is extra space around each character
 offset = { x = 0, y = 0 }  # Default: x = 0, y = 0
@@ -131,13 +133,18 @@ draw_bold_text_with_bright_colors = false  # Default
 [colors.primary]
 #foreground = "#d8d8d8"  # Default
 #background = "#181818"  # Default
+#background = "#FFF6B3"  # light yellow
+#foreground = "#000000"  # black
 #dim_foreground = "#828482"  # Default
 #bright_foreground = "None"  # Default
+
 
 # Cursor colors
 [colors.cursor]
 #text = "CellBackground"  # Default
 #cursor = "CellForeground"  # Default
+#text = "#FFF6B3" # Default
+#cursor = "#000000"  # Default
 
 # Vi mode cursor colors
 [colors.vi_mode_cursor]
@@ -174,8 +181,11 @@ draw_bold_text_with_bright_colors = false  # Default
 
 # Selection colors
 [colors.selection]
+#selection = { text = "#000000", background = "#E8D77A" }
 #text = "CellBackground"  # Default
 #background = "CellForeground"  # Default
+#text = "#000000"  # Default
+#background = "#E8D77A"  # Default
 
 # Normal colors
 [colors.normal]
