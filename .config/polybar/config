@@ -18,7 +18,7 @@ foreground = #ccc2a6
 
 modules-left = bspwm separatordotted info-docker
 modules-center = title
-modules-right = vpn-openvpn-isrunning separatordotted system-nvidia-smi separatordotted filesystem separatordotted memory cpu temperature separatordotted wlan battery-combined-udev separatordotted date powermenu
+modules-right = vpn-openvpn-isrunning separatordotted system-nvidia-smi separatordotted filesystem separatordotted memory cpu separatordotted battery-combined-udev separatordotted date powermenu
 
 [module/memory]
 type = internal/memory
@@ -75,13 +75,13 @@ interval = 30
 
 [module/filesystem]
 type = internal/fs
-mount-0 = /home
+mount-0 = /
 interval = 10
 fixed-values = true
-format-mounted-prefix = 
+format-mounted-prefix = M
 format-mounted-prefix-foreground = "#ff79c6"
 format-mounted = <label-mounted>
-format-unmounted-prefix = 
+format-unmounted-prefix = U
 format-unmounted-prefix-foreground = "#ff79c6"
 format-unmounted = <label-unmounted>
 label-mounted = df: %free%
@@ -223,12 +223,12 @@ type = custom/menu
 expand-left = true
 menu-0-0 = Logout
 menu-0-0-exec = i3-msg exit
-menu-0-1 = Lock
-menu-0-1-exec = ~/repos/dotfiles/.i3/lock.sh
+menu-0-1 = Reboot
+menu-0-1-exec = reboot
 menu-0-2 = Poweroff
 menu-0-2-exec = poweroff
-menu-0-3 = Reboot
-menu-0-3-exec = reboot
+menu-0-3 = Lock
+menu-0-3-exec = "xscreensaver-command --lock"
 format-spacing = 1 
 format-padding = 2
 label-open = ◉
