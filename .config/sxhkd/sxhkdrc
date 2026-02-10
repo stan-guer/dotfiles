@@ -1,17 +1,16 @@
-#
-# wm independent hotkeys
+# # wm independent hotkeys
 #
 
 # terminal emulator
 super + Return
-        ~/repos/alacritty/target/release/alacritty
+        ~/.cargo/bin/alacritty
 # terminal with current pwd
 super + shift + Return
         urxvt -cd `xdotool getactivewindow getwindowname | cut -d ":" -f 2 | sed -e 's@~@'"$HOME"'@'`
 
 # program launcher
-super + space
-	dmenu_run
+super + @space
+	rofi -show drun	
 
 # make sxhkd reload its configuration files:
 super + Escape
