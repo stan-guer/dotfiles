@@ -27,9 +27,12 @@ bspc config adaptive raise 	 true
 bspc rule -a Screenkey manage=off
 bspc rule -a Firefox desktop=^2 focus=on
 bspc rule -a Slack desktop=^0 focus=on
+bspc rule -a flameshot state=floating layer=above center=on focus=on
+bspc rule -a Flameshot state=floating layer=above center=on focus=on
 
 ~/.config/polybar/launch_polybar_multi.sh
 feh --bg-fill /usr/share/backgrounds/Jammy-Jellyfish_WP_4096x2304_Grey.png
 
 nm-applet &
 xscreensaver &
+pgrep -x flameshot >/dev/null || flameshot &
