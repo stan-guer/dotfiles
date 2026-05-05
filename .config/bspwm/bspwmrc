@@ -1,5 +1,12 @@
 #! /bin/sh
 
+if command -v gnome-keyring-daemon >/dev/null; then
+  if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval "$(gnome-keyring-daemon --start --components=ssh)"
+    export SSH_AUTH_SOCK
+  fi
+fi
+
 pgrep -x sxhkd > /dev/null || sxhkd 2>~/.err_debug_sxhkd > ~/.out_debug_sxhkd &
 
 bspc config remove_disabled_monitors true
