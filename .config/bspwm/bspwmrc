@@ -31,6 +31,8 @@ bspc rule -a flameshot state=floating layer=above center=on focus=on
 bspc rule -a Flameshot state=floating layer=above center=on focus=on
 
 ~/.config/polybar/launch_polybar_multi.sh
+pkill -u "$(id -u)" -f "$HOME/.config/polybar/monitor_hotplug.sh" 2>/dev/null || true
+~/.config/polybar/monitor_hotplug.sh &
 feh --bg-fill /usr/share/backgrounds/Jammy-Jellyfish_WP_4096x2304_Grey.png
 
 nm-applet &
